@@ -1,0 +1,6 @@
+{
+  "platform": "linkedin",
+  "status": "error",
+  "code": 403,
+  "body": "{\"error\":\"One or more accounts do not belong to this user\"}"
+}

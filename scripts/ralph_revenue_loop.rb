@@ -37,6 +37,7 @@ File.open(LOCK_PATH, File::RDWR | File::CREAT, 0o644) do |lock_file|
 
   timestamp = Time.now.iso8601
   build = run_cmd("ruby", "scripts/build_site.rb")
+  mail_monitor = run_cmd("ruby", "scripts/monitor_mail_replies.rb")
   pages = Dir.glob(File.join(ROOT, "site", "**", "*.html")).length
   tools = csv_count(File.join(ROOT, "data", "tools.csv"))
   comparisons = csv_count(File.join(ROOT, "data", "comparisons.csv"))
@@ -69,6 +70,14 @@ File.open(LOCK_PATH, File::RDWR | File::CREAT, 0o644) do |lock_file|
     "",
     "- No affiliate dashboard or Stripe API verification was performed by this local script.",
     "- Treat this as content operation status, not payment truth.",
+    "",
+    "## Mail Monitor",
+    "",
+    "```text",
+    mail_monitor[:stdout].strip,
+    mail_monitor[:stderr].strip,
+    "exit=#{mail_monitor[:status]}",
+    "```",
     "",
     "## Next Execution Block",
     "",

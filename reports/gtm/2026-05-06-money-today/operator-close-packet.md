@@ -6,8 +6,10 @@ Generated: May 6, 2026.
 
 - Programmatic SEO affiliate site is published.
 - Live Stripe checkout is published for the $499 AI Workflow Revenue Diagnostic.
-- Stripe balance remains $0.00 available and $0.00 pending after the latest check.
-- Today's Stripe charge search returned no charges yet.
+- Stripe balance remains $0.00 available and $0.00 pending after the 2026-05-06 3:40 PM ET check.
+- Today's Stripe charge search returned no charges yet for the 2026-05-06 America/New_York day window.
+- George Lewis from Slushie Kang Italian Ice replied asking for examples of Subway work.
+- The system sent multiple replies to George; `sales/sent_lock.csv` now marks the lead as duplicate-locked and `scripts/monitor_mail_replies.rb` monitors the thread before any future follow-up.
 
 ## Same-Day Target
 
@@ -38,3 +40,5 @@ Evidence files:
 
 - `zernio-latest-post-readback.json`
 - `zernio-bluesky-retry.json`
+- `mail-monitor-latest.md`
+- `george-thread-audit.md`

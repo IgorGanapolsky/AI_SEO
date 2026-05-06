@@ -287,14 +287,15 @@ end
 
 def render_offer(offer)
   deliverables = offer.fetch("deliverables").split("|").map { |item| "<li>#{h(item)}</li>" }.join
+  action_label = offer.fetch("price") == "197" ? "Buy" : "Book"
   body = <<~HTML
     <main>
       <section class="article-hero">
-        <p class="eyebrow">$#{h(offer.fetch("price"))} same-day diagnostic</p>
+        <p class="eyebrow">$#{h(offer.fetch("price"))} paid offer</p>
         <h1>#{h(offer.fetch("title"))}</h1>
         <p class="lede">For #{h(offer.fetch("audience"))}: #{h(offer.fetch("pain"))}.</p>
         <div class="actions">
-          <a class="button" href="#{h(offer.fetch("checkout_url"))}">Book for $#{h(offer.fetch("price"))}</a>
+          <a class="button" href="#{h(offer.fetch("checkout_url"))}">#{action_label} for $#{h(offer.fetch("price"))}</a>
           <a class="button secondary" href="#{u("/diagnostic.html")}">General diagnostic</a>
         </div>
       </section>
@@ -306,7 +307,7 @@ def render_offer(offer)
         <h2>How it closes</h2>
         <p>After checkout, the buyer sends the current URL, workflow, vendor stack, or process notes. The output is a written diagnostic and implementation-ready close packet for one workflow.</p>
         <div class="actions">
-          <a class="button" href="#{h(offer.fetch("checkout_url"))}">Book #{h(offer.fetch("title"))}</a>
+          <a class="button" href="#{h(offer.fetch("checkout_url"))}">#{action_label} #{h(offer.fetch("title"))}</a>
         </div>
       </article>
     </main>

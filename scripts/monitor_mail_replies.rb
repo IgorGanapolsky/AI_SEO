@@ -24,9 +24,14 @@ def applescript(limit)
         if i > #{limit} then exit repeat
         try
           set m to item i of inboxMessages
-          set bodyText to content of m
+          set bodyText to ""
+          set senderText to sender of m
+          set subjectText to subject of m
+          if senderText contains "George" or senderText contains "george" or subjectText contains "QSR OpenClaw" or subjectText contains "workflow teardown" or subjectText contains "sent you a message" then
+            set bodyText to content of m
+          end if
           if length of bodyText > 1200 then set bodyText to text 1 thru 1200 of bodyText
-          set end of outputLines to "INBOX" & tab & ((date received of m) as text) & tab & (sender of m) & tab & (subject of m) & tab & bodyText
+          set end of outputLines to "INBOX" & tab & ((date received of m) as text) & tab & senderText & tab & subjectText & tab & bodyText
         end try
       end repeat
 
@@ -36,9 +41,7 @@ def applescript(limit)
         try
           set m to item i of sentMessages
           set recipientText to (address of every to recipient of m) as text
-          set bodyText to content of m
-          if length of bodyText > 1200 then set bodyText to text 1 thru 1200 of bodyText
-          set end of outputLines to "SENT" & tab & ((date sent of m) as text) & tab & recipientText & tab & (subject of m) & tab & bodyText
+          set end of outputLines to "SENT" & tab & ((date sent of m) as text) & tab & recipientText & tab & (subject of m) & tab & ""
         end try
       end repeat
     end tell
@@ -140,6 +143,18 @@ else
     lock = locks[key]
     lock_text = lock ? "sent_lock=#{lock[:sent_count]}, duplicate=#{lock[:duplicate]}" : "sent_lock=missing"
     report << "- #{key}: #{grouped.length} sent messages in recent window; #{lock_text}. Do not send another follow-up until a new inbound reply arrives."
+  end
+end
+
+locked = locks.select { |_email, lock| lock[:duplicate] || lock[:sent_count] > 1 }
+unless locked.empty?
+  report << ""
+  report << "## Locked Leads"
+  report << ""
+  locked.each do |email, lock|
+    lead = leads.find { |candidate| candidate[:email] == email }
+    lead_name = lead ? lead[:business] : email
+    report << "- #{lead_name} / #{email}: sent_count=#{lock[:sent_count]}, duplicate=#{lock[:duplicate]}. Do not send again until a new inbound reply or payment."
   end
 end
 

@@ -1,0 +1,77 @@
+{
+  "platform": "instagram",
+  "status": "submitted",
+  "upload_status": 200,
+  "response": {
+    "post": {
+      "recycling": {
+        "enabled": false,
+        "gapFreq": "month",
+        "recycleCount": 0,
+        "contentVariations": [],
+        "contentVariationIndex": 0
+      },
+      "_id": "69fb9aac1b2684d013948774",
+      "userId": "69bed6734b43ff36d93bcc84",
+      "title": "",
+      "content": "QSR OpenClaw Agent Pack is live.\n\n$197 for missed-call capture, ordering handoff, inventory reorder watchlists, loyalty winback, and daily manager ops digest templates.\n\nhttps://ai-seo-operator-stack.web.app/offers/qsr-openclaw-agent-pack.html",
+      "mediaItems": [
+        {
+          "type": "image",
+          "url": "https://media.zernio.com/media/1778096810137_0zumtiic_qsr-openclaw-agent-pack-card.png",
+          "size": 135668,
+          "_id": "69fb9aac1b2684d013948775"
+        }
+      ],
+      "platforms": [
+        {
+          "platform": "instagram",
+          "accountId": {
+            "_id": "69bed6ad6cb7b8cf4c8b0865",
+            "profileId": "69bed6734b43ff36d93bcc88",
+            "platform": "instagram",
+            "displayName": "Igor Ganapolsky",
+            "isActive": true,
+            "profilePicture": "https://scontent-lhr6-1.cdninstagram.com/v/t51.82787-19/662724811_17956995744099269_5578447715179736448_n.jpg?stp=dst-jpg_s206x206_tt6&_nc_cat=109&ccb=7-5&_nc_sid=bf7eb4&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy41NzYuQzMifQ%3D%3D&_nc_ohc=XjcjwtQu3AAQ7kNvwG4AD5n&_nc_oc=Ado3jXoJ40yPErgou0M2fK-dymNnAB_FORXBCIeCyC_JNFXdSeEweL4_bi5b2ykaXKg&_nc_zt=24&_nc_ht=scontent-lhr6-1.cdninstagram.com&edm=AP4hL3IEAAAA&_nc_gid=aFk12ZkhFoc_qmrgzHblVQ&_nc_tpa=Q5bMBQHu2wTa245rHu9pCMbfEYCYJVWRdgJr5aZBjzErrU7TOCSiXiGfxNz1AcN-M7Rgix4s6L50e_tUyA&oh=00_Af5sDSyUF6j9sww91xCpTgLOHab0v0Y1_OZ3z0_jnfPPug&oe=6A007BCE",
+            "username": "igorganapolsky"
+          },
+          "profileId": "69bed6734b43ff36d93bcc88",
+          "customMedia": [],
+          "scheduledFor": "2026-05-06T19:46:51.839Z",
+          "platformSpecificData": {
+            "__platformUserIdSnapshot": "25738602079173811",
+            "__usernameSnapshot": "igorganapolsky",
+            "publishingStarted": "2026-05-06T19:46:53.288Z",
+            "lastPublishStage": "publishing",
+            "pendingContainerId": "17963514573099269"
+          },
+          "status": "published",
+          "publishAttempts": 0,
+          "contentHash": "47ca8dbcb3091a3d7d22b2d262d0689b",
+          "_id": "69fb9aac1b2684d013948776",
+          "platformPostId": "18006175370908543",
+          "platformPostUrl": "https://www.instagram.com/p/DYAmxO5CLEA/",
+          "publishedAt": "2026-05-06T19:47:11.754Z"
+        }
+      ],
+      "scheduledFor": "2026-05-06T19:46:51.839Z",
+      "timezone": "UTC",
+      "status": "published",
+      "tags": [],
+      "hashtags": [],
+      "mentions": [],
+      "visibility": "public",
+      "crosspostingEnabled": true,
+      "metadata": {
+        "usageCounted": true
+      },
+      "publishAttempts": 0,
+      "contentHash": "47ca8dbcb3091a3d7d22b2d262d0689b",
+      "createdAt": "2026-05-06T19:46:52.866Z",
+      "updatedAt": "2026-05-06T19:47:11.915Z",
+      "__v": 0,
+      "publishingClaimedAt": "2026-05-06T19:46:52.956Z"
+    },
+    "message": "Post published successfully"
+  }
+}

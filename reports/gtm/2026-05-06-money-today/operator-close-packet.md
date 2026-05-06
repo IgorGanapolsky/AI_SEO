@@ -12,7 +12,7 @@ Generated: May 6, 2026.
 - The system sent multiple replies to George; `sales/sent_lock.csv` now marks the lead as duplicate-locked and `scripts/monitor_mail_replies.rb` monitors the thread before any future follow-up.
 - Public QSR OpenClaw Agent Pack page is live with a $197 checkout path.
 - Latest Stripe check after the QSR pack distribution still shows $0.00 available, $0.00 pending, and no charges today.
-- 2026-05-06 4:26 PM ET right-now attempt: two QSR retry messages were accepted into Mail Outbox but did not reach Sent; Mail Outbox is stuck at 73 messages, so these are not counted as contacted.
+- 2026-05-06 4:26 PM ET right-now attempt: two QSR retry messages were accepted into Mail Outbox but did not reach Sent; Mail Outbox is stuck at 71 messages, so these are not counted as contacted.
 - LinkedIn QSR pack retry through Zernio failed with HTTP 403 account ownership/auth error.
 
 ## Same-Day Target

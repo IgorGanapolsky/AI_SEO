@@ -14,7 +14,7 @@ Generated: 2026-05-06T16:26-04:00
   - TAMALE SHAKK HOUSTON / thetamaleshakkhouston@gmail.com
   - Pearland Mobile Food Unit MFU2026-012 / henryajanel45@gmail.com
 - Mail accepted the messages into Outbox, but Sent audit did not show delivery. These are not counted as contacted.
-- Tried Mail synchronization and Message > Send automation. Outbox remained stuck at 73 messages.
+- Tried Mail synchronization and Message > Send automation. Outbox remained stuck; latest count is 71 messages.
 - Retried QSR pack publish on LinkedIn through Zernio. Zernio returned HTTP 403: `One or more accounts do not belong to this user`.
 
 ## Current Buyer-Facing Assets That Are Live

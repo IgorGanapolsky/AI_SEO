@@ -1,0 +1,10 @@
+{
+  "platform": "reddit",
+  "status": "submitted",
+  "response_keys": [
+    "error",
+    "message",
+    "platformResults",
+    "post"
+  ]
+}

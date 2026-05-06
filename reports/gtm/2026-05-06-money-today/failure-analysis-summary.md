@@ -17,7 +17,10 @@ Generated: May 6, 2026.
 - Created a lower-friction $49 quick teardown checkout.
 - Redeployed Firebase Hosting.
 - Published new posts to Threads and Bluesky.
+- Published $49 quick teardown to X/Twitter and Instagram.
+- Sent 9 targeted direct emails to public n8n/AI automation agency contacts.
 - Recorded LinkedIn retry failure separately instead of claiming success.
+- Recorded Reddit Zernio failure separately instead of claiming success.
 
 ## Live URLs
 
@@ -25,3 +28,5 @@ Generated: May 6, 2026.
 - $49 checkout: https://buy.stripe.com/6oU00jduQ3n03hDfSH3sI16
 - Threads: https://www.threads.com/@igorganapolsky/post/DYAhq0VlJAt
 - Bluesky: https://bsky.app/profile/iganapolsky.bsky.social/post/3ml7fba5ee42l
+- X/Twitter: https://twitter.com/i/web/status/2052106703114539473
+- Instagram: https://www.instagram.com/p/DYAkKPniq34/

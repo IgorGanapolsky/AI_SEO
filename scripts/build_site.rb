@@ -290,9 +290,9 @@ def render_offer(offer)
   body = <<~HTML
     <main>
       <section class="article-hero">
-        <p class="eyebrow">#{h(offer.fetch("price"))} same-day diagnostic</p>
+        <p class="eyebrow">$#{h(offer.fetch("price"))} same-day diagnostic</p>
         <h1>#{h(offer.fetch("title"))}</h1>
-        <p class="lede">For #{h(offer.fetch("audience"))} dealing with #{h(offer.fetch("pain"))}.</p>
+        <p class="lede">For #{h(offer.fetch("audience"))}: #{h(offer.fetch("pain"))}.</p>
         <div class="actions">
           <a class="button" href="#{h(offer.fetch("checkout_url"))}">Book for $#{h(offer.fetch("price"))}</a>
           <a class="button secondary" href="#{u("/diagnostic.html")}">General diagnostic</a>
@@ -316,7 +316,7 @@ def render_offer(offer)
   FileUtils.mkdir_p(offers_dir)
   write(File.join(offers_dir, "#{offer.fetch("slug")}.html"), page(
     title: offer.fetch("title"),
-    description: "#{offer.fetch("title")} for #{offer.fetch("pain")}.",
+    description: "#{offer.fetch("title")} for #{offer.fetch("audience")}: #{offer.fetch("pain")}.",
     body: body
   ))
 end

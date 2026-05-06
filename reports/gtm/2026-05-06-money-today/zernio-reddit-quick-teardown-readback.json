@@ -1,0 +1,14 @@
+[
+  {
+    "status": "failed",
+    "platforms": [
+      {
+        "platform": "reddit",
+        "status": "failed",
+        "publishedAt": null,
+        "platformPostUrl": null,
+        "error": null
+      }
+    ]
+  }
+]

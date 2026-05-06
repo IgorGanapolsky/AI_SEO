@@ -1,0 +1,9 @@
+{
+  "platform": "instagram",
+  "status": "submitted",
+  "upload_status": 200,
+  "response_keys": [
+    "message",
+    "post"
+  ]
+}

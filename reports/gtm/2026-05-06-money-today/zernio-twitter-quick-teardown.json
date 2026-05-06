@@ -1,0 +1,8 @@
+{
+  "platform": "twitter",
+  "status": "submitted",
+  "response_keys": [
+    "message",
+    "post"
+  ]
+}

@@ -23,6 +23,17 @@ Generated: May 6, 2026.
 - OpenClaw Bluesky vertical: https://bsky.app/profile/iganapolsky.bsky.social/post/3ml7f3rqt7q2g
 - $49 Threads post: https://www.threads.com/@igorganapolsky/post/DYAhq0VlJAt
 - $49 Bluesky post: https://bsky.app/profile/iganapolsky.bsky.social/post/3ml7fba5ee42l
+- $49 X/Twitter post: https://twitter.com/i/web/status/2052106703114539473
+- $49 Instagram post: https://www.instagram.com/p/DYAkKPniq34/
+
+## Direct Outreach
+
+- Sent 5 agency emails at `2026-05-06T15:26:14-04:00`.
+- Sent 4 agency emails at `2026-05-06T15:27:26-04:00`.
+- Total new agency outreach sent: 9.
+- Lead tracker: `sales/lead_tracker.csv`
+- Sent lock: `sales/sent_lock.csv`
+- Reddit Zernio attempt failed and is not counted as published.
 
 ## Revenue Truth
 

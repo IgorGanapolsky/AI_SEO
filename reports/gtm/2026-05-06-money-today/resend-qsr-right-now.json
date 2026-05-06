@@ -1,0 +1,20 @@
+[
+  {
+    "business_name": "TAMALE SHAKK HOUSTON",
+    "email": "thetamaleshakkhouston@gmail.com",
+    "status": "error",
+    "provider": "resend",
+    "code": 403,
+    "body": "{\"statusCode\":403,\"message\":\"The igorganapolsky.com domain is not verified. Please, add and verify your domain on https://resend.com/domains\",\"name\":\"validation_error\"}",
+    "timestamp": "2026-05-06T16:58:51.357239-04:00"
+  },
+  {
+    "business_name": "Pearland Mobile Food Unit MFU2026-012",
+    "email": "henryajanel45@gmail.com",
+    "status": "error",
+    "provider": "resend",
+    "code": 403,
+    "body": "{\"statusCode\":403,\"message\":\"The igorganapolsky.com domain is not verified. Please, add and verify your domain on https://resend.com/domains\",\"name\":\"validation_error\"}",
+    "timestamp": "2026-05-06T16:58:51.525486-04:00"
+  }
+]

@@ -14,6 +14,7 @@ Generated: May 6, 2026.
 - Latest Stripe check after the QSR pack distribution still shows $0.00 available, $0.00 pending, and no charges today.
 - 2026-05-06 4:26 PM ET right-now attempt: two QSR retry messages were accepted into Mail Outbox but did not reach Sent; Mail Outbox is stuck at 71 messages, so these are not counted as contacted.
 - LinkedIn QSR pack retry through Zernio failed with HTTP 403 account ownership/auth error.
+- 2026-05-06 4:55 PM ET browser attempt: Safari was used to create a Resend API key from the logged-in Resend session. Resend API rejected external sends because `igorganapolsky.com` is not verified and `onboarding@resend.dev` only permits testing sends to `iganapolsky@gmail.com`.
 
 ## Same-Day Target
 
@@ -52,6 +53,9 @@ Evidence files:
 - `zernio-instagram-qsr-pack.json`
 - `zernio-linkedin-qsr-pack-retry.json`
 - `right-now-attempt-2026-05-06T16-26.md`
+- `resend-qsr-right-now.json`
+- `resend-qsr-right-now-onboarding.json`
+- `browser-resend-attempt-2026-05-06T16-55.md`
 
 ## QSR Pack Distribution
 

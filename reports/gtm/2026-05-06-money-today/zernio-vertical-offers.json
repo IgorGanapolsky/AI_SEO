@@ -1,0 +1,23 @@
+[
+  {
+    "platform": "linkedin",
+    "status": "skipped",
+    "reason": "no account"
+  },
+  {
+    "platform": "threads",
+    "status": "submitted",
+    "response_keys": [
+      "message",
+      "post"
+    ]
+  },
+  {
+    "platform": "bluesky",
+    "status": "submitted",
+    "response_keys": [
+      "message",
+      "post"
+    ]
+  }
+]

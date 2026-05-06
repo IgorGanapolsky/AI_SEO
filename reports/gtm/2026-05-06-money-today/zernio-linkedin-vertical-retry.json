@@ -1,0 +1,6 @@
+{
+  "platform": "linkedin",
+  "status": "error",
+  "http": 403,
+  "reason": "{\"error\":\"One or more accounts do not belong to this user\"}"
+}

@@ -20,6 +20,7 @@ end
 
 TOOLS = read_csv(File.join(ROOT, "data", "tools.csv")).to_h { |row| [row.fetch("slug"), row] }
 COMPARISONS = read_csv(File.join(ROOT, "data", "comparisons.csv"))
+OFFERS = read_csv(File.join(ROOT, "data", "offers.csv"))
 
 def h(value)
   CGI.escapeHTML(value.to_s)
@@ -45,6 +46,7 @@ def page(title:, description:, body:)
           <a class="brand" href="#{u("/")}">AI Operator Stack</a>
           <nav aria-label="Primary">
             <a href="#{u("/diagnostic.html")}">$499 Diagnostic</a>
+            <a href="#{u("/offers/restaurant-ai-call-leak-diagnostic.html")}">Call Leak Audit</a>
             <a href="#{u("/comparisons/best-restaurant-ai-phone-agents.html")}">Restaurant AI</a>
             <a href="#{u("/comparisons/openclaw-alternatives-for-business-automation.html")}">OpenClaw Alternatives</a>
             <a href="#{u("/comparisons/best-n8n-workflows-for-lead-routing.html")}">n8n Workflows</a>
@@ -96,19 +98,37 @@ def render_index
     HTML
   end.join
 
+  offer_cards = OFFERS.map do |offer|
+    <<~HTML
+      <a class="link-card" href="#{u("/offers/#{h(offer.fetch("slug"))}.html")}">
+        <span>#{h(offer.fetch("price"))}</span>
+        <strong>#{h(offer.fetch("title"))}</strong>
+        <small>#{h(offer.fetch("pain"))}</small>
+      </a>
+    HTML
+  end.join
+
   body = <<~HTML
     <main>
       <section class="hero">
         <div>
-          <p class="eyebrow">Programmatic SEO for practical AI tools</p>
-          <h1>Compare AI automation and restaurant tools by real operating use case.</h1>
-          <p class="lede">Buyer-focused reviews for n8n workflows, OpenClaw alternatives, and restaurant AI tools. Built for operators who need a useful stack before they need another generic tool list.</p>
+          <p class="eyebrow">AI workflow diagnostics for specific revenue leaks</p>
+          <h1>Fix the automation handoff that is costing calls, leads, or follow-up.</h1>
+          <p class="lede">Choose a focused $499 diagnostic for restaurant AI calls, n8n revenue workflows, or OpenClaw-style agent operations. The comparison library supports the recommendation; the paid offer fixes one concrete workflow.</p>
           <div class="actions">
-            <a class="button" href="#{u("/diagnostic.html")}">Book the $499 Diagnostic</a>
-            <a class="button secondary" href="#{u("/comparisons/best-restaurant-ai-phone-agents.html")}">Compare Restaurant AI</a>
-            <a class="button secondary" href="#{u("/comparisons/openclaw-vs-n8n.html")}">OpenClaw vs n8n</a>
+            <a class="button" href="#{u("/offers/ai-workflow-quick-teardown.html")}">$49 Quick Teardown</a>
+            <a class="button secondary" href="#{u("/offers/restaurant-ai-call-leak-diagnostic.html")}">Restaurant Call Leak Audit</a>
+            <a class="button secondary" href="#{u("/offers/n8n-revenue-workflow-diagnostic.html")}">n8n Revenue Workflow</a>
+            <a class="button secondary" href="#{u("/offers/openclaw-agent-ops-diagnostic.html")}">OpenClaw Agent Ops</a>
           </div>
         </div>
+      </section>
+      <section class="band">
+        <div class="section-heading">
+          <p class="eyebrow">Same-day offers</p>
+          <h2>Specific diagnostics convert better than generic AI help</h2>
+        </div>
+        <div class="link-grid">#{offer_cards}</div>
       </section>
       <section class="band">
         <div class="section-heading">
@@ -265,9 +285,46 @@ def render_diagnostic
   ))
 end
 
+def render_offer(offer)
+  deliverables = offer.fetch("deliverables").split("|").map { |item| "<li>#{h(item)}</li>" }.join
+  body = <<~HTML
+    <main>
+      <section class="article-hero">
+        <p class="eyebrow">#{h(offer.fetch("price"))} same-day diagnostic</p>
+        <h1>#{h(offer.fetch("title"))}</h1>
+        <p class="lede">For #{h(offer.fetch("audience"))} dealing with #{h(offer.fetch("pain"))}.</p>
+        <div class="actions">
+          <a class="button" href="#{h(offer.fetch("checkout_url"))}">Book for $#{h(offer.fetch("price"))}</a>
+          <a class="button secondary" href="#{u("/diagnostic.html")}">General diagnostic</a>
+        </div>
+      </section>
+      <article class="article">
+        <h2>Why this is urgent</h2>
+        <p>#{h(offer.fetch("proof_angle"))}. The point is not to buy another AI tool. The point is to find the exact workflow break and define the first fix that can be implemented.</p>
+        <h2>Deliverables</h2>
+        <ul>#{deliverables}</ul>
+        <h2>How it closes</h2>
+        <p>After checkout, the buyer sends the current URL, workflow, vendor stack, or process notes. The output is a written diagnostic and implementation-ready close packet for one workflow.</p>
+        <div class="actions">
+          <a class="button" href="#{h(offer.fetch("checkout_url"))}">Book #{h(offer.fetch("title"))}</a>
+        </div>
+      </article>
+    </main>
+  HTML
+
+  offers_dir = File.join(SITE, "offers")
+  FileUtils.mkdir_p(offers_dir)
+  write(File.join(offers_dir, "#{offer.fetch("slug")}.html"), page(
+    title: offer.fetch("title"),
+    description: "#{offer.fetch("title")} for #{offer.fetch("pain")}.",
+    body: body
+  ))
+end
+
 render_index
 render_diagnostic
+OFFERS.each { |offer| render_offer(offer) }
 TOOLS.values.each { |tool| render_tool(tool) }
 COMPARISONS.each { |comparison| render_comparison(comparison) }
 
-puts "Built #{TOOLS.length} tool pages, #{COMPARISONS.length} comparison pages, and 1 diagnostic page into #{SITE}"
+puts "Built #{TOOLS.length} tool pages, #{COMPARISONS.length} comparison pages, #{OFFERS.length} offer pages, and 1 diagnostic page into #{SITE}"

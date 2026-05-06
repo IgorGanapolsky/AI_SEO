@@ -1,0 +1,11 @@
+{
+  "status": "submitted",
+  "platform": "bluesky",
+  "response_keys": [
+    "message",
+    "post"
+  ],
+  "submitted_at": "2026-05-06T18:52:04.380628+00:00",
+  "readback_status": "published",
+  "platformPostUrl": "https://bsky.app/profile/iganapolsky.bsky.social/post/3ml7eofr2sj2s"
+}

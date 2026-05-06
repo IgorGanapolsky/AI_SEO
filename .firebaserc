@@ -1,0 +1,13 @@
+{
+  "projects": {},
+  "targets": {
+    "local-leap-marketing-x2w17": {
+      "hosting": {
+        "ai-seo": [
+          "ai-seo-operator-stack"
+        ]
+      }
+    }
+  },
+  "etags": {}
+}

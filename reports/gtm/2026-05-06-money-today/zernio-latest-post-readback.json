@@ -1,0 +1,27 @@
+{
+  "status": "partial",
+  "createdAt": "2026-05-06T18:50:47.110Z",
+  "platforms": [
+    {
+      "platform": "linkedin",
+      "status": "published",
+      "publishedAt": "2026-05-06T18:50:49.408Z",
+      "platformPostUrl": "https://www.linkedin.com/feed/update/urn:li:share:7457864466047795201/",
+      "error": null
+    },
+    {
+      "platform": "threads",
+      "status": "published",
+      "publishedAt": "2026-05-06T18:51:01.850Z",
+      "platformPostUrl": "https://www.threads.com/@igorganapolsky/post/DYAgWR0iK85",
+      "error": null
+    },
+    {
+      "platform": "bluesky",
+      "status": "failed",
+      "publishedAt": null,
+      "platformPostUrl": null,
+      "error": null
+    }
+  ]
+}

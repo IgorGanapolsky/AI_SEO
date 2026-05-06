@@ -8,6 +8,18 @@ Programmatic SEO affiliate site for practical AI tools:
 
 The site is static and CSV-backed so content can be refreshed weekly without editing individual HTML pages.
 
+## Public Site
+
+```text
+https://ai-seo-operator-stack.web.app/
+```
+
+Paid diagnostic:
+
+```text
+https://ai-seo-operator-stack.web.app/diagnostic.html
+```
+
 ## Build
 
 ```bash

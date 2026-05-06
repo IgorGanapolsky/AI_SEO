@@ -1,0 +1,13 @@
+{
+  "hosting": {
+    "target": "ai-seo",
+    "public": "site",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "cleanUrls": false,
+    "trailingSlash": false
+  }
+}

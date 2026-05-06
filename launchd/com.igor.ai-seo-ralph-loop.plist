@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>com.igor.ai-seo-ralph-loop</string>
+  <key>ProgramArguments</key>
+  <array>
+    <string>/usr/bin/ruby</string>
+    <string>/Users/igorganapolsky/workspace/git/igor/AI_SEO/scripts/ralph_revenue_loop.rb</string>
+  </array>
+  <key>WorkingDirectory</key>
+  <string>/Users/igorganapolsky/workspace/git/igor/AI_SEO</string>
+  <key>StartInterval</key>
+  <integer>21600</integer>
+  <key>StandardOutPath</key>
+  <string>/Users/igorganapolsky/workspace/git/igor/AI_SEO/reports/gtm/2026-05-06-money-today/launchd.out.log</string>
+  <key>StandardErrorPath</key>
+  <string>/Users/igorganapolsky/workspace/git/igor/AI_SEO/reports/gtm/2026-05-06-money-today/launchd.err.log</string>
+</dict>
+</plist>

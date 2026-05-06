@@ -1,0 +1,74 @@
+[
+  {
+    "id": "ai-seo-20260506-1",
+    "channel": "linkedin",
+    "theme": "n8n workflows",
+    "text": "Most teams do not need a bigger AI model first. They need a reliable workflow: intake, enrichment, routing, calendar handoff, and a human fallback. I mapped the n8n workflow stack I would use for that here: http://localhost:4174/comparisons/best-n8n-workflows-for-lead-routing.html",
+    "status": "ready",
+    "created_at": "2026-05-06T14:34:50-04:00"
+  },
+  {
+    "id": "ai-seo-20260506-2",
+    "channel": "linkedin",
+    "theme": "OpenClaw alternatives",
+    "text": "OpenClaw is interesting for technical agent experiments, but most operators asking about it need something deployable this week. I built the plain-English comparison against n8n and adjacent automation tools: http://localhost:4174/comparisons/openclaw-vs-n8n.html",
+    "status": "ready",
+    "created_at": "2026-05-06T14:34:50-04:00"
+  },
+  {
+    "id": "ai-seo-20260506-3",
+    "channel": "linkedin",
+    "theme": "restaurant AI",
+    "text": "Restaurant AI has a brutally simple ROI story: missed calls, slow reservations, order mistakes, and staff interruptions. I compared the phone-agent options I would evaluate first: http://localhost:4174/comparisons/best-restaurant-ai-phone-agents.html",
+    "status": "ready",
+    "created_at": "2026-05-06T14:34:50-04:00"
+  },
+  {
+    "id": "ai-seo-20260506-4",
+    "channel": "threads",
+    "theme": "n8n workflows",
+    "text": "New comparison live: n8n workflows for lead routing. Intake, enrichment, scheduling, and follow-up without turning every handoff into spreadsheet glue.",
+    "status": "ready",
+    "created_at": "2026-05-06T14:34:50-04:00"
+  },
+  {
+    "id": "ai-seo-20260506-5",
+    "channel": "threads",
+    "theme": "restaurant AI",
+    "text": "Restaurant AI tools worth watching: phone agents for missed calls, QR menu software, and AI food photos. The practical stack is smaller than the hype.",
+    "status": "ready",
+    "created_at": "2026-05-06T14:34:50-04:00"
+  },
+  {
+    "id": "ai-seo-20260506-6",
+    "channel": "bluesky",
+    "theme": "OpenClaw alternatives",
+    "text": "OpenClaw vs n8n is really agent runtime vs workflow operations. I wrote the operator-focused comparison for people choosing what to deploy.",
+    "status": "ready",
+    "created_at": "2026-05-06T14:34:50-04:00"
+  },
+  {
+    "id": "ai-seo-20260506-7",
+    "channel": "linkedin",
+    "theme": "paid diagnostic",
+    "text": "I opened a small number of same-day AI Workflow Revenue Diagnostics. The deliverable is practical: one workflow or funnel, prioritized failure points, and an implementation map for n8n, OpenClaw-style agents, affiliate tracking, or restaurant AI tools. Checkout: https://buy.stripe.com/4gMcN562o9Lo05reOD3sI11",
+    "status": "ready",
+    "created_at": "2026-05-06T14:34:50-04:00"
+  },
+  {
+    "id": "ai-seo-20260506-8",
+    "channel": "threads",
+    "theme": "paid diagnostic",
+    "text": "Same-day offer: AI Workflow Revenue Diagnostic. One funnel/workflow, one fix list, one implementation map. Built for n8n, affiliate funnels, OpenClaw-style agents, and restaurant AI stacks. https://buy.stripe.com/4gMcN562o9Lo05reOD3sI11",
+    "status": "ready",
+    "created_at": "2026-05-06T14:34:50-04:00"
+  },
+  {
+    "id": "ai-seo-20260506-9",
+    "channel": "bluesky",
+    "theme": "paid diagnostic",
+    "text": "I put up a $499 AI Workflow Revenue Diagnostic for operators who need a concrete automation/funnel fix list instead of another AI tools brainstorm: https://buy.stripe.com/4gMcN562o9Lo05reOD3sI11",
+    "status": "ready",
+    "created_at": "2026-05-06T14:34:50-04:00"
+  }
+]
